@@ -24,11 +24,11 @@ public class BankAccount {
 
     public void setAccountType(String accountType) {
         this.accountType = accountType;
-        if(accountType == "s" || accountType == "c") {
-            this.accountType = "Current Account";
+        if(accountType == "s") {
+            this.accountType = "Savings Account";
         }
-        else {
-            this.accountType=accountType;
+        else  if(accountType == "c"){
+            this.accountType="Current Account";
         }
     }
 
@@ -53,7 +53,7 @@ public class BankAccount {
         chase.setName("Afif");
         chase.setEmail("afiffifa@hotmail.com");
         chase.setId(01);
-        chase.setAccountType("c");
+        chase.setAccountType("a");
         System.out.println(chase.getName());
         System.out.println(chase.getEmail());
         System.out.println(chase.getId());
